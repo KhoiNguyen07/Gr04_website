@@ -146,13 +146,12 @@
 }
 
 @media only screen and (max-width: 500px) {
-    
+ 
     .search{
         position: absolute;
         left: 40px;
         border: none;
-        
-       
+        width: 80%;
     }
     #icon_search{
        font-size: 20px;
@@ -160,10 +159,9 @@
     #input{
         z-index: 2;
         border: 3px solid black;
-        position: absolute;
-        width: 300px;
-        margin: 0 5px;
-        transform: translateX(-20%);
+        
+        margin-left: -47px;
+        width: 300%;
         height: 40px;
         padding: 20px;
         border-radius: 10px;
@@ -173,8 +171,8 @@
         z-index: 3;
     }
     .products{
-        transform: translateX(-9%);
-        width: 300px;
+        left: 40px;    
+        width: 80%;
         height: 800px;
     }
     #modal_search{

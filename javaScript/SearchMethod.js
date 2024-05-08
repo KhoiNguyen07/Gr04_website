@@ -8,16 +8,18 @@ search_tap.addEventListener("click", function(e) {
 
 document.addEventListener("click", function(e) {
     SearchList.style.display = "none";
+    TapIcon.style.display ="block"
 });
 
 // man hinh nho
 
-var TapIcon = document.querySelector("#icon_search")
 
+var TapIcon = document.querySelector("#icon_search")
 TapIcon.addEventListener("mousemove",function(e){
+   
     var modal = document.querySelector("#modal_search")
     var input = document.querySelector("#input")
-    
+    //TapIcon.style.display ="none"
     modal.style.display ="block"
     input.style.display ="block"
     
