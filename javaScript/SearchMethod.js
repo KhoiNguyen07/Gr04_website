@@ -1,3 +1,4 @@
+// man hinh rong
 var search_tap = document.querySelector(".search");
 var SearchList = document.querySelector(".products");
 search_tap.addEventListener("click", function(e) {
@@ -8,6 +9,24 @@ search_tap.addEventListener("click", function(e) {
 document.addEventListener("click", function(e) {
     SearchList.style.display = "none";
 });
+
+// man hinh nho
+
+var TapIcon = document.querySelector("#icon_search")
+
+TapIcon.addEventListener("mousemove",function(e){
+    var modal = document.querySelector("#modal_search")
+    var input = document.querySelector("#input")
+    
+    modal.style.display ="block"
+    input.style.display ="block"
+    
+})
+
+
+
+
+
 
 
 

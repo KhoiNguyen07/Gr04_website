@@ -115,6 +115,7 @@
 
 
 
+
 .nav-item{
     margin: 0 20px;
 }
@@ -146,9 +147,44 @@
 
 @media only screen and (max-width: 500px) {
     
-    .search input:focus,.search:hover input {
-        width: 40px; 
+    .search{
+        position: absolute;
+        left: 40px;
+        border: none;
+        
+       
     }
-  
-    
+    #icon_search{
+       font-size: 20px;
+    }
+    #input{
+        z-index: 2;
+        border: 3px solid black;
+        position: absolute;
+        width: 370px;
+        margin: 0 5px;
+        transform: translateX(-20%);
+        height: 40px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #input:focus, .products{
+       
+        z-index: 3;
+    }
+    .products{
+        transform: translateX(-2%);
+        height: 800px;
+    }
+    #modal_search{
+        z-index: 1;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        opacity: 0.3;
+    }
+ 
 }

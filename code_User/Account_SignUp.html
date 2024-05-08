@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Kí Tài Khoản</title>
+   <!--Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+ 
+ 
+    
+   <!-- Phần Layout (header + bottom) -->
+   <!-- CSS của phần header trong trang web -->
+   <link rel="stylesheet" href="/CSS/Navbar_css.css">
+   <!-- CSS của phần bottom trong trang web -->
+   <link rel="stylesheet" href="/CSS/Footer_css.css">
+
+
+    <!-- ---------------------------------------------------------------------------------------------------------- -->
+    <!-- CSS của phần middle (nội dung của trang) trong trang web -->
+    <link rel="stylesheet" href="/CSS/SignUp_css.css">
+    
+    <!-- link dẫn đến các biểu tượng trong trang web  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+  
+  
+    <div class="container-fluid">
+        <!--top-->
+        <div class="top">
+
+            <div class="navbar__logo">
+                <a href="/SourceCode/TrangChu/TrangChu.html"><img src="/Images/IMG_Logo/logo.png" width="200"></a>  
+            </div> 
+            <div class="navbar navbar-expand-xl bg-white p-3"> 
+              
+                <button style="border:none;" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            
+
+                <div class="offcanvas offcanvas-start" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <a href="/SourceCode/TrangChu/TrangChu.html"><img src="/Images/IMG_Logo/logo.png" width="200"></a>  
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="navbar-nav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/SourceCode/TrangChu/TrangChu.html"><b>TRANG CHỦ</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/SourceCode/TrangChu/GioiThieu.html"><b>GIỚI THIỆU</b></a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>PHỤ KIỆN</b></a>
+                                <ul class="dropdown-menu" id="dropdown-menu" aria-labelledby="navbarDrop">
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/PhuKien/Non.html" class="dropdown-item">NÓN</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/PhuKien/Balo.html" class="dropdown-item">BALO</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/PhuKien/DayNit.html" class="dropdown-item">DÂY NỊT</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/PhuKien/Vo.html" class="dropdown-item">VỚ</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/PhuKien/Giay.html" class="dropdown-item">GIÀY</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/PhuKien/Dep.html" class="dropdown-item">DÉP</a>
+                                    </li>
+    
+                                </ul>
+                                
+                                
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>ÁO</b></a>
+                                <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDrop">
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/Ao/AoThun.html" class="dropdown-item">ÁO THUN</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/Ao/AoSoMi.html" class="dropdown-item">ÁO SƠ MI</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/Ao/AoTankTop.html" class="dropdown-item">ÁO TANKTOP</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/Ao/AoPolo.html" class="dropdown-item">ÁO POLO</a>
+                                    </li>
+                                </ul>
+                    
+                            </li>                   
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>ÁO KHOÁC</b></a>
+                                <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDrop">
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/AoKhoac/AoDa.html" class="dropdown-item">ÁO DA</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/AoKhoac/AoHoodie.html" class="dropdown-item">ÁO HOODIE</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/AoKhoac/AoJean.html" class="dropdown-item">ÁO JEAN</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/AoKhoac/AoDu.html" class="dropdown-item">ÁO KHOÁC DÙ</a>
+                                    </li>
+                                </ul>
+                    
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>QUẦN</b></a>
+                                <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDrop">
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/Quan/QuanTay.html" class="dropdown-item">QUẦN TÂY</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/Quan/QuanJean.html" class="dropdown-item">QUẦN JEANS</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/Quan/QuanKaKi.html" class="dropdown-item">QUẦN KAKI</a>
+                                    </li>
+    
+                                    <li>
+                                        <a href="/SourceCode/SanPham/ShowALL/Quan/QuanShort.html" class="dropdown-item">QUẦN SHORT</a>
+                                    </li>
+                                </ul>
+                    
+                            </li>
+                        </ul>
+          
+                    </div>                 
+                </div>          
+                <div class="row row-cols-3">      
+    
+                        <div  type="none" class="contact dropdown col">
+                            <a  class="account" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-user"></i>
+                            </a>                        
+                            <ul id="dropdown-menu" class="dropdown-menu" aria-labelledby="navbarDrop">
+                                <li>
+                                    <a href="/SourceCode/TaiKhoan/TaiKhoan.html" class="dropdown-item">TÀI KHOẢN</a>
+                                </li>
+            
+                                <li>
+                                    <a href="/SourceCode/TaiKhoan/Account_SignUp.html" class="dropdown-item">ĐĂNG KÍ</a>
+                                </li>
+            
+                                <li>
+                                    <a href="/SourceCode/TaiKhoan/Account_SignIn.html" class="dropdown-item">ĐĂNG NHẬP</a>
+                                </li>
+                            </ul>
+                 
+                        </div>
+                    
+                    
+                        <div  type="none" class=" contact col">
+                            <a id="shopping" href="/SourceCode/TaiKhoan/GioHang.html">
+                                <!-- <i class="fa-solid fa-cart-shopping"></i>
+                                <p id="small">1</p> -->
+                            </a>                    
+                        </div>
+                 
+                    
+                </div> 
+                  
+                <form class="search" id="search_id">               
+                    <input type="text" placeholder="Tìm Kiếm">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>   
+                    </button>
+                    <div class="products">
+                        
+                    </div>
+                </form>       
+            </div>
+            <script src="/JavaScript/SearchMethod.js"></script>
+            <script src="/JavaScript/CountProduct.js"></script>
+        </div>
+
+
+        <!-- body -->
+        <div class="middle">
+         
+            <div class="form_input">
+                <div class="title">
+                    <h2>Đăng Ký  Tài Khoản</h2>
+
+                </div>
+                <form class="form" id="form">
+                    <div class="form-type">
+                        <label>Tên Tài Khoản</label><br/>
+                        <input id="username" type="text" placeholder="Nhập Tên Tài Khoản">
+                        <small></small>
+                        <span></span>
+                    </div>
+                    <div class="form-type">
+                        <label>Họ Và Tên</label><br/>
+                        <input id="name" type="text" placeholder="Nhập Họ Tên">
+                        <small></small>
+                        <span></span>
+                    </div>
+
+                    <div class="form-type">
+                        <label>Số Điện Thoại</label><br/>
+                        <input id="phoneNo" type="number" placeholder="Nhập Số Điện Thoại">
+                        <small ></small>
+                        <span></span>       
+                    </div>
+
+                    <div class="form-type">
+                        <label>Email</label><br/>
+                        <input id="email" type="email" placeholder="Nhập Email">
+                        <small ></small>
+                        <span></span>       
+                    </div>
+
+                    <div class="form-type">
+                        <label>Mật Khẩu</label><br/>
+                        <input id="password" type="password" placeholder="Nhập Mật Khẩu">
+                        <small ></small>
+                        <span></span>       
+                    </div>
+
+                    <div class="form-type">
+                        <label>Xác Nhận Mật Khẩu</label><br/>
+                        <input id="cf_password" type="password" placeholder="Nhập Lại Mật Khẩu ">
+                        <small ></small>
+                        <span></span>       
+                    </div>
+                  
+                    <div class="button">
+                        <button class="btn" type="submit">Đăng Kí</button>
+                        <div class="sub">
+                            <p>Bạn đã có tài khoản rồi, Đăng Nhập <a href="/SourceCode/TaiKhoan/Account_SignIn.html">Tại Đây!</a></p>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+            
+        </div>
+
+        <!-- footer -->
+        <div class="footer row">
+            <div class="footer__brand col-lg-3 col-sm-6 mt-5">
+                <div class="footer__logo">
+                    <a href="/SourceCode/TrangChu/TrangChu.html"><img src="/Images/IMG_Logo/logo.png" width="200"></a> 
+                </div>
+
+                <div class="showroom">
+                    <p  class="footer__title">CỞ SỞ</p>
+                    <p><span class="bold">Store 1</span>: 12-12Bis, CMT8, P.Bến Thành, Q.1, HCM</p>
+                    <p><span class="bold">Store 2</span>: 484, Lê Văn Sỹ, P.14, Q.3, HCM</p>
+                    <p><span class="bold">Store 3</span>: 261, Quang Trung, P.10, Q.Gò Vấp, HCM</p>
+                    <p><span class="bold">Store 4</span>: 420 Nguyễn Thị Thập, P. Tân Quy, Q.7, HCM</p>
+                </div>
+               
+            </div>
+
+
+            <div class="footer__support  col-lg-3 col-sm-6 mt-5">
+                <p class="footer__title">HỖ TRỢ (9:00 - 21:00)</p>
+
+                <div class="connect__info w-100 row row-cols-1"   >    
+                    <div class="col">
+                        <i class="fa-solid fa-phone text-info"></i>                        
+                        <span class="footer__title">: 0955553333</span>      
+                    </div>
+                    <div class="col">
+                        <i class="fa-solid fa-envelope text-danger"></i>  
+                        <span class="footer__title">: abc123@gmail.com</span>  
+                    </div>            
+                </div>
+            </div>
+
+             <div class="footer__social  col-lg-3 col-sm-6 mt-5">
+                 <p class="footer__title">THEO DÕI CHÚNG TÔI</p>
+                <div class="social__icon">
+                    <a   href="https://www.tiktok.com">
+                        <i class="fa-brands fa-tiktok text-black"></i>
+                    </a>
+                    <a   href="https://www.facebook.com">
+                        <i class="fa-brands fa-facebook text-primary"></i>
+                    </a>
+                    <a   href="https://www.youtube.com">
+                        <i class="fa-brands fa-youtube text-danger"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__cash col-lg-3 col-sm-6 mt-5">
+                <p class="footer__title">PHƯƠNG THỨC THANH TOÁN</p>
+                <div class="cash__icon">
+                    <i class="fa-brands fa-bitcoin text-warning"></i>
+                    <i class="fa-solid fa-money-check-dollar text-info"></i>
+                    <i class="fa-solid fa-money-bill text-success"></i>
+                    <i class="fa-brands fa-cc-visa text-black"></i>
+                </div>
+            </div>
+                
+
+
+        </div>
+
+    </div>
+
+    <script src="/JavaScript/SignUpValidate.js"></script>
+
+</body>
+</html>
