@@ -1,0 +1,223 @@
+.middle{
+    margin: 200px auto 200px auto;
+}
+
+
+.box{
+    margin: 20px 10px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 5px;   
+    color: black;
+}
+
+.box p{
+    text-align: center;
+    line-height: 50px;
+}
+
+.title a{
+   
+    font-style: italic;
+    text-decoration: none;
+    color: black;
+}
+.title a:hover{
+    text-decoration: underline;
+    opacity: 0.5;
+}
+
+
+
+
+
+.form-check-input{
+    opacity: 0;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right:  -3px;
+    bottom: -3px;
+}
+
+.form-check-input::after{
+    content: "";
+    display: block;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border:1px solid black;
+    transform: translate(-70%, -70%);
+    opacity: 0;
+}
+
+#zoom{
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    background-image: url('/Images/IMG_Product/IMG_Quan/jean/item1/1.jpg');
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+.hide{
+    display: none;
+    
+}
+
+
+.box.selected{
+    
+    border: 3px solid black;
+    font-weight: bold;
+} 
+
+.size, .count{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.counter{
+    margin-left: 50px;
+    color: grey;
+    border:1px solid grey;
+    font-size: 20px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+    transform: translateY(-25%);
+    border-radius: 10px;
+   
+}
+.counter .btn{
+    border: none;
+}
+
+.btn-buy{
+    margin-top: 30px;
+    border: 1px solid black;
+    width: 400px;
+    height: 70px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+}
+.btn-buy:hover{
+    border: 3px solid black;
+    background-color: white;
+    font-weight: bold;
+    color: black;
+}
+.sub-title{
+    font-size: 20px;
+}
+
+.describe{
+    border: 3px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+}
+.describe h5{
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.choose_size{
+    cursor: pointer;
+    width: 95%;
+}
+.zoom_page{
+    display: none;
+}
+.zoom_page div{
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.zoom_page img{
+    width: 80vw;  
+    height: 80vh; 
+    z-index: 1100;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+}
+
+@media only screen and (max-width: 3000px) {
+    .carousel-indicators img{
+        width: 100px;
+        height: 120px;
+        display: block;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    .carousel-indicators button{
+        width: max-content !important;
+        
+    }
+    .carousel-indicators {
+        
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 700px; 
+        width: 200px;              
+        transform: translate(-150%,-20%);
+    }
+ 
+}
+@media only screen and (max-width: 1200px) {
+   
+    .carousel-indicators img{
+        width: 100px;
+        height: 100px;
+        display: block;
+    }
+    .carousel-indicators button{
+        width: max-content !important;
+        
+    }
+    .carousel-indicators {
+        position: unset;
+        width: 100%;
+        flex-direction: row;
+        transform: translateX(-15%);
+        height: 150px;
+        display: flex;   
+    }
+  
+}
+
+@media only screen and (max-width: 700px) {
+    #zoom{
+        display: none;
+    }
+    .carousel-indicators img{
+        width: 50px;
+        height: 50px;
+      
+    }
+    .carousel-indicators {
+        height: 50px;
+    }
+    .zoom_page img{
+        width: 90vw;
+        height: 200px;  
+        left: 5%;
+    }
+   
+}

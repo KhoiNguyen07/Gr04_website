@@ -1,0 +1,139 @@
+
+.middle{
+    margin-top:200px;
+    margin-bottom: 200px;
+    width: 100%;
+    
+}
+.title{
+    text-align: center;
+    margin: 20px auto;
+    font-size: 25px;
+    color: grey;
+
+} 
+
+.form_input{
+
+    height: 500px;
+    width: 50%;
+    margin: 100px auto 0 auto;
+    background-color: white;
+    
+}
+.form{
+    
+    width: 80%;
+    margin: 50px auto;
+}
+.form label{
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+.form small{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(110%);
+   
+}
+
+
+.form-type{
+    position: relative;
+}
+.form-type span{
+    position: absolute;
+    width: 0%;  
+    left: 0;
+    bottom: 0%;
+    transition: 0.3s;
+}
+.form-type input:focus ~span{
+    border: 2px solid green;
+    width: 100%;
+}
+
+.form-type.error small{
+    color: red;
+}
+.form-type.error input:focus ~ span{
+    border: 2px solid red;
+}
+
+
+
+.middle input{
+    font-weight: bold;
+    opacity: 0.4;
+    margin: 0px 0;
+    height: 50px;
+    width: 100%;
+    font-style: italic;
+    font-size: 15px;
+    padding-left: 20px;
+    border:none;
+    border-bottom: 2px solid grey;
+    outline: none;
+}
+
+.button{
+    margin-top: 35px;
+    text-align: center;
+}
+.btn{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: grey;
+    cursor: pointer;
+    height: 50px;
+    width: 300px;
+    border-radius: 10px;
+}
+.btn:hover{
+    border: 1px solid grey;
+    color: grey;
+}
+
+.sub{
+    margin-top: 10px;
+}
+.button a{
+    cursor: pointer;
+    color: lightskyblue;
+    text-decoration: none;
+}
+@media only screen and (max-width: 900px) {
+    
+    .btn{
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        background-color: grey;
+        cursor: pointer;
+        height: 50px;
+        width: 200px;
+        border-radius: 10px;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    
+    .btn{
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        background-color: grey;
+        cursor: pointer;
+        height: 50px;
+        width: 150px;
+        border-radius: 10px;
+    }
+    
+}

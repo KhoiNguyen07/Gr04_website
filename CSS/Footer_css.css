@@ -1,0 +1,61 @@
+
+
+
+
+.footer{
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.footer__title{
+    text-align: start;
+    font-weight: bold;
+}
+.footer__logo{
+    margin-bottom: 50px;
+}
+.bold{
+    font-weight: bold;
+}
+
+.footer__brand{
+    margin-bottom: 50px;
+}
+.showroom p:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.service__list{
+    text-decoration: none;
+    color: black;
+   
+    
+}
+.connect__info{
+    width: 200px;
+}
+.service__list:hover{
+    color: blue;
+    cursor: pointer;
+    
+}
+
+.social__icon, .cash__icon,.connect__info{
+    display: flex;
+    width: 220px;
+}
+
+
+.footer i{
+    font-size: 30px;
+    margin: 0 10px;
+}
+.footer i:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}

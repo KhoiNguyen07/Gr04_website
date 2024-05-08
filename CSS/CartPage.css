@@ -1,0 +1,53 @@
+.middle{
+    margin: 200px 0 100px 0;
+}
+.middle img{
+    margin-top: 15px;
+    border-radius: 20px;
+}
+.middle .title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.middle .row{
+    font-size: 20px;
+    width: 80%;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    margin: 50px auto;
+    padding: 10px;
+}
+.sl{
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.del:hover{
+    color: red;
+    cursor: pointer;
+}
+.total p{
+    font-size: 20px;
+    font-style: italic;
+    margin-left: 10%;
+}
+.total h3{
+    font-weight: bold;
+    font-size: 30px;
+    font-style: italic;
+    color: red;
+    margin-left: 10%;
+}
+.buy{
+
+    display: none;
+    text-align: center;
+}
+.btn-success{
+ 
+    font-size: 30px;
+    width: 50%;
+    height: 70px;
+}
