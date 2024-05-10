@@ -13,14 +13,14 @@
 
     <!-- Phần Layout (header + bottom) -->
     <!-- CSS của phần header trong trang web -->
-    <link rel="stylesheet" href="/CSS/Navbar_css.css">
+    <link rel="stylesheet" href="../CSS/Navbar_css.css">
     <!-- CSS của phần bottom trong trang web -->
-    <link rel="stylesheet" href="/CSS/Footer_css.css">
+    <link rel="stylesheet" href="../CSS/Footer_css.css">
    
    
     <!-- ---------------------------------------------------------------------------------------------------------- -->
     <!-- CSS của phần middle (nội dung của trang) trong trang web -->
-    <link rel="stylesheet" href="/CSS/ShowAllProduct_css.css">
+    <link rel="stylesheet" href="../CSS/ShowAllProduct_css.css">
    
    
     <!-- ---------------------------------------------------------------------------------------------------------- -->
@@ -223,9 +223,16 @@
                 </div>
 
                 <form class="search" id="search_id">
-                    <input type="text" placeholder="Tìm Kiếm">
+                    <input id="input" type="text" placeholder="Tìm Kiếm" style="display: none;">
                     <button>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass" id="icon_search">
+                           
+                        </i>
+                      
+                        <div id="modal_search" style="display: none;">
+
+                        </div>
+                        
                     </button>
                     <div class="products">
 
@@ -265,7 +272,7 @@
                     </div>
 
                     <div class="col-xl-3 col-lg-4 col-md-6 p-3 text-center" id="item-box">
-                        <a href="./item3_polo.html" style="text-decoration: none;">
+                        <a href="./item2_polo.html" style="text-decoration: none;">
                             <img src="../img_polo/item2_1.jpeg" height="400" width="280">
                             <h5 style="margin-top: 20px;" >Áo Polo Khóa Kéo...</h5>
                             <p style="font-weight: bold; color: red; ">259.000đ  <span style="text-decoration: line-through; font-size: 13px; color: grey;">299.000đ</span></p>   
@@ -306,7 +313,7 @@
         <div class="footer row">
             <div class="footer__brand col-lg-3 col-sm-6 mt-5">
                 <div class="footer__logo">
-                    <a href="/SourceCode/TrangChu/TrangChu.html"><img src="/Images/IMG_Logo/logo.png" width="200"></a> 
+                    <a href="../index.html"><img src="../img_Logo/logo.png" width="200"></a> 
                 </div>
 
                 <div class="showroom">
