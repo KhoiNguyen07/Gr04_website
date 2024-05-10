@@ -322,11 +322,7 @@ var mockData =[
     picture: '../img_vo/item2_1.jpeg',
     link:"/SourceCode/SanPham/Detail/PhuKien/Vo/item2.html"
 },
-{
-    name: 'Vớ Dài Trơn',
-    picture: '../img_vo/item3_1.jpeg',
-    link:"/SourceCode/SanPham/Detail/PhuKien/Vo/item3.html"
-},
+
 
 {
     name: 'Áo Polo Oversize',

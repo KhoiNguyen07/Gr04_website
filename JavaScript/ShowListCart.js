@@ -90,7 +90,7 @@
           {                 
              
               localStorage.removeItem(localStorage.key(delNo));
-              window.location.href="../TaiKhoan/GioHang.html"
+              window.location.href="../code_User/GioHang.html"
           }
           
       })
@@ -109,11 +109,11 @@
                 
                 localStorage.clear()
                 alert("Thanh Toán Thành Công!")
-                window.location.href="../TaiKhoan/GioHang.html"
+                window.location.href="../code_User/GioHang.html"
             }
         }else{
             alert("Bạn Chưa Đăng Nhập Vào Tài Khoản!")
-            window.location.href="../TaiKhoan/Account_SignIn.html"
+            window.location.href="../code_User/Account_SignIn.html"
         }
        
       

@@ -78,7 +78,7 @@ form.addEventListener('submit',function(e){
         {
             alert("Đăng Nhập Thành Công!")
             sessionStorage.setItem("loggedInUsername", data.userName);
-            window.location.href="../TaiKhoan/TaiKhoan.html" 
+            window.location.href="../code_User/TaiKhoan.html" 
         }
         else{
             alert("Sai Mật Khẩu Hoặc Tên Tài Khoản!")

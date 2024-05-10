@@ -96,7 +96,7 @@ form.addEventListener('submit',function(e){
         var json = JSON.stringify(user);
         sessionStorage.setItem(userName, json);
         alert("Đăng Kí Thành Công!, Nhấn OK để tiếp tục.");
-        window.location.href="../TaiKhoan/Account_SignIn.html"
+        window.location.href="../code_User/Account_SignIn.html"
     }
 
 })
