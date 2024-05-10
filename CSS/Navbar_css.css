@@ -139,53 +139,24 @@
 @media only screen and (max-width: 1400px) {
     
     .search input:focus,.search:hover input {
-        width: 160px; 
+        width: 100px; 
     }
   
     
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 400px) {
  
     .search{
         position: absolute;
         left: 40px;
         border: none;
-        width: 80%;
+        width: 50%;
+
     }
-    #icon_search{
-       font-size: 20px;
-      
-    }
-    #input{
-        z-index: 2;
-        border: 3px solid black;
+   
+    .search input:focus,.search:hover input {
+        width: 55%;
         
-        margin-left: -47px;
-        width: 300%;
-        height: 40px;
-        padding: 20px;
-        border-radius: 10px;
     }
-    #input:focus, .products{
-       
-        z-index: 3;
-    }
-    
-    .products{
-        left: 40px;    
-        width: 80%;
-        height: 800px;
-    }
-    #modal_search{
-        z-index: 1;
-        position: fixed;
-        top:0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: black;
-        opacity: 0.3;
-    }
- 
 }

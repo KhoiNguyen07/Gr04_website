@@ -14,16 +14,16 @@ document.addEventListener("click", function(e) {
 // man hinh nho
 
 
-var TapIcon = document.querySelector("#icon_search")
-TapIcon.addEventListener("mousemove",function(e){
+// var TapIcon = document.querySelector("#icon_search")
+// TapIcon.addEventListener("mousemove",function(e){
    
-    var modal = document.querySelector("#modal_search")
-    var input = document.querySelector("#input")
+//     var modal = document.querySelector("#modal_search")
+//     var input = document.querySelector("#input")
   
-    modal.style.display ="block"
-    input.style.display ="block"
+//     modal.style.display ="block"
+//     input.style.display ="block"
     
-})
+// })
 
 
 
