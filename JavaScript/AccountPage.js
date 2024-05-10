@@ -56,7 +56,7 @@ signout.addEventListener("click",function(e){
     {
         flat= false;
         sessionStorage.setItem("loggedInUsername", "");
-        window.location.href="../TaiKhoan/TaiKhoan.html" 
+        window.location.href="../code_User/TaiKhoan.html" 
     
     }
    
