@@ -70,7 +70,7 @@
                   
                   userInfoHTML +=`<div class="total">    
                                       <p>Số Lượng Sản Phẩm: ${count}</p>
-                                      <h3>TỔNG SỐ TIỀN : ${sum}.000đ</h3>
+                                      <h3 id="total">TỔNG SỐ TIỀN : ${sum}.000đ</h3>
                                   </div>`
                   buy.style.display="block" 
                   

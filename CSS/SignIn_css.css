@@ -124,6 +124,9 @@
 }
 @media only screen and (max-width: 600px) {
     
+    .form{
+        width: 200px;
+    }
     .btn{
         font-size: 15px;
         font-weight: bold;

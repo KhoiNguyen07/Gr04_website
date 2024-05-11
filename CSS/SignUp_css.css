@@ -1,7 +1,7 @@
 
 .middle{
     margin-top:200px;
-    margin-bottom: 500px;
+    margin-bottom: 700px;
     width: 100%;
     
 }
@@ -133,7 +133,10 @@
     
 }
 @media only screen and (max-width: 600px) {
-    
+     
+    .form{
+        width: 200px;
+    }
     .btn{
         font-size: 15px;
         font-weight: bold;
