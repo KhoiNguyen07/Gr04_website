@@ -26,7 +26,7 @@
                           <div class="row" >
                              
                               <div class=" col-xl-4 col-md-12 text-center" >             
-                                  <img src="${item.img_value}" width="250">
+                                  <img src="${item.img_value}" width="100%">
                               </div>
                               <div class="col-xl-8 col-md-12 mt-5">
                                  
