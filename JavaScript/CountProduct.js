@@ -1,10 +1,9 @@
-var count1 = 0;
+var count1 = sessionStorage.getItem("SoLuong")
 
-for(var i = 0 ; i< localStorage.length; i++)
+if( count1 == null)
 {
-    count1++;
+    count1 = 0;
 }
-
 
 var HTML=`
             <i class="fa-solid fa-cart-shopping"></i>

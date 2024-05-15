@@ -1,6 +1,6 @@
 var btn_add = document.querySelector("#btn_add")
 var form = document.querySelector("#form")
-    
+
 
 form.addEventListener('submit',function(e){
     e.preventDefault()
@@ -18,9 +18,28 @@ form.addEventListener('submit',function(e){
     var valueSpan = document.querySelector('#value');
     var SL_value = valueSpan.textContent;
 
-    let flag;
 
+
+
+    // tong so sp trong cart
+    SL_value = parseInt(valueSpan.textContent, 10);
+
+   
+    var countsp = 0;
+
+   
+    var storedCount = sessionStorage.getItem("SoLuong");
+    if (storedCount !== null) {
+        countsp = parseInt(storedCount, 10);
+    }
+
+    
+
+
+
+    
     // lay size SP
+    let flag;
     var size = document.getElementsByName("size")
     var size_value = "";
     for(var i = 0 ;i < size.length; i++)
@@ -46,12 +65,15 @@ form.addEventListener('submit',function(e){
         {
             // tao SP
             var item = {
+
                 nameProduct_value: nameProduct_value,
                 price_value: price_value,
                 img_value: img_value ,
                 size_value: size_value,
                 SL_value: SL_value,
             };
+            
+
 
             // chuyen doi thanh chuoi JSON
             var json = JSON.stringify(item);
@@ -63,10 +85,16 @@ form.addEventListener('submit',function(e){
 
             alert("Đã Thêm Vào Giỏ Hàng Thành Công!");
             location.reload()
+                
+            // Cộng dồn số lượng sản phẩm mới
+            countsp += SL_value;
+
+            // Lưu số lượng sản phẩm mới vào sessionStorage
+            sessionStorage.setItem("SoLuong", countsp);
         }
-        
        
 })
+
 
 
 
