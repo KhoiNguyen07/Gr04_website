@@ -156,6 +156,10 @@
     top: 10%;
 }
 
+.fa-solid.fa-star, .text-black{
+    display: none;
+}
+
 @media only screen and (max-width: 3000px) {
     .carousel-indicators img{
         width: 100px;
