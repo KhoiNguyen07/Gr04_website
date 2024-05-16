@@ -19,7 +19,17 @@ form.addEventListener('submit',function(e){
     var SL_value = valueSpan.textContent;
 
 
-  
+    SL_value = parseInt(valueSpan.textContent, 10);
+
+   
+    var countsp = 0;
+
+   
+    var storedCount = sessionStorage.getItem("SoLuong");
+    if (storedCount !== null) {
+        countsp = parseInt(storedCount, 10);
+    }
+
     
 
 
@@ -31,15 +41,24 @@ form.addEventListener('submit',function(e){
             SL_value: SL_value,
         };
 
+      
         // chuyen doi thanh chuoi JSON
         var json = JSON.stringify(item);
 
         // luu vao localstorage
-        localStorage.setItem(nameProduct_value, json);
+
+     
+        var randomId = Math.random()
+        localStorage.setItem(randomId, json);
 
      
         alert("Đã Thêm Vào Giỏ Hàng Thành Công!");
         location.reload()
+          // Cộng dồn số lượng sản phẩm mới
+          countsp += SL_value;
+
+          // Lưu số lượng sản phẩm mới vào sessionStorage
+          sessionStorage.setItem("SoLuong", countsp);
        
 })
 
